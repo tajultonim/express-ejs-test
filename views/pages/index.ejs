@@ -5,6 +5,37 @@
     <%- include("../partials/head.ejs"); %>
 </head>
 
+<style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    h1.title {
+        font-weight: 900;
+        font-size: 5rem;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    p.subheader {
+        margin-top: -40px;
+        font-size: 1.5rem;
+    }
+
+    canvas {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+    }
+</style>
+
 <body>
     <h1 class="title">WELCOME</h1>
     <p class="subheader">GET <%= path %> </p>
